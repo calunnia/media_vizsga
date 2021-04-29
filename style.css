@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*     border: 1px dashed black;
+    margin:3px;  */
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: lightgreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hamburger_menu {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  font-size: 2em;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  padding: 50px;
+  padding-top: 30px;
+  letter-spacing: 0.6em;
+  font-size: 2.5em;
+  font-weight: lighter;
+  color: white;
+}
+
+h3 {
+  margin: 15px 0;
+  color: coral;
+}
+
+.cover {
+  line-height: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 90vh;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 80px;
+  padding: 20px;
+  height: 80vh;
+}
+
+.left {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  width: 33%;
+}
+
+.middle {
+  background-color: white;
+  padding: 20px;
+  width: 33%;
+  color: black;
+}
+
+.right {
+  background-color: black;
+  padding: 40px;
+}
+
+.right .content {
+  width: 100%;
+  height: 100%;
+}
+
+.right .content .play {
+  color: white;
+  line-height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 10em;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.left, .right, .middle {
+  width: 33%;
+  min-width: 300px;
+  position: relative;
+}
+
+.lecture {
+  color: coral;
+}
+
+.readmore {
+  position: absolute;
+  bottom: -40px;
+  left: -1px;
+  color: coral;
+  margin: 10px 0;
+}
+
+.lorem {
+  line-height: 1.4em;
+}
+
+@media (max-width: 1100px) {
+  .cover {
+    width: 95%;
+    padding: 20px;
+  }
+  .cover h1 {
+    font-size: .8em;
+    padding: 20px 0;
+    letter-spacing: .3em;
+    font-weight: lighter;
+    text-align: left;
+  }
+  .cover .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .cover .wrapper .left, .cover .wrapper .right, .cover .wrapper .middle {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
